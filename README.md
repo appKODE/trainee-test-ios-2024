@@ -57,13 +57,13 @@
 
 ## API
 
-Спецификация метода API (он у нас один) - [здесь](https://kode-education.stoplight.io/docs/trainee-test/b3A6MjUxNDM5Mjg-get-users)
+Спецификация метода API (он у нас один) - [здесь](https://openapi.kode.ru/docs/trainee-test/ew2ilitadvkry-get-users)
 
 Запрос для получения успешного ответа:
 
 ```bash
 curl --request GET \
-  --url https://stoplight.io/mocks/kode-education/trainee-test/25143926/users \
+  --url https://stoplight.io/mocks/kode-api/trainee-test/331141861/users \
   --header 'Content-Type: application/json' \
   --header 'Prefer: code=200, example=success'
 ```
@@ -72,10 +72,12 @@ curl --request GET \
 
 ```bash
 curl --request GET \
-  --url https://stoplight.io/mocks/kode-education/trainee-test/25143926/users \
+  --url https://stoplight.io/mocks/kode-api/trainee-test/331141861/users \
   --header 'Content-Type: application/json' \
   --header 'Prefer: code=500, example=error-500'
 ```
+
+Обратите внимание на заголовки `Prefer` – с их помощью можно манипулровать ответом.
 
 ## Функциональные требования
 
